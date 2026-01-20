@@ -30,6 +30,7 @@ public class CheapestFlightWithK_Stops {
 
     }
 
+    //
     static class Info{
         int v;
         int cost;
@@ -42,6 +43,8 @@ public class CheapestFlightWithK_Stops {
         }
     } 
 
+
+    //dijksta + k_stops logic
     public static int cheapestFlight(int n,int flights[][],int src,int dest,int k){
         ArrayList<Edge> graph[]=new ArrayList[n];
         createGraph(flights, graph);
